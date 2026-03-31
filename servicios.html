@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Servicios</title>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <link rel="icon" type="image/png" href="img/favicon.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <i data-lucide="wrench"></i>
+                <h1 class="text-focus-in">Mecánica <span>Lautaro</span></h1>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" class="active">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-hero ">
+        <h1 class="animate__animated animate__fadeInDown">Nuestros Servicios</h1>
+        <p class="animate__animated animate__fadeInUp">Soluciones profesionales para cada necesidad de tu vehículo.</p>
+    </div>
+
+    <section class="services-featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servicios</h2>
+                <p class="section-subtitle">Elegí el servicio que necesitás</p>
+            </div>
+
+            <div class="services-grid">
+
+                
+                <div class="service-card">
+                    <img src="./img/cambio-aceite-coche.jpg" class="card-img">
+                    <h3>Cambio de aceite</h3>
+                    <p>$15.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+                
+                <div class="service-card">
+                    <img src="./img/NAZ_fffe9929753e4df891abf985d3e5565e.jpg" class="card-img">
+                    <h3>Alineación y balanceo</h3>
+                    <p>$18.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+                
+                <div class="service-card">
+                    <img src="./img/frenosysuspension.webp" class="card-img">
+                    <h3>Frenos y suspensión</h3>
+                    <p>$22.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+                
+                <div class="service-card">
+                    <img src="./img/mecanicageneral.jpeg" class="card-img">
+                    <h3>Diagnóstico general</h3>
+                    <p>$10.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+                
+                <div class="service-card">
+                    <img src="./img/primer-plano-de-una-batería-de-auto-3.webp" class="card-img">
+                    <h3>Batería</h3>
+                    <p>$30.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+               
+                <div class="service-card">
+                    <img src="./img/Inyección y sistema de combustible.jpeg" class="card-img">
+                    <h3>Revisión de motor</h3>
+                    <p>$25.000</p>
+                    <button class="btn btn-primario">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div id="carrito-contenedor" class="carrito-oculto">
+        <h3>Tu Carrito</h3>
+        <ul id="lista-carrito"></ul>
+        <p>Total: <span id="total-carrito">0</span></p>
+        <button id="btn-cerrar">Cerrar</button>
+    </div>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <li>
+                <a href="lautaro@gmail.com" class="footer-link">
+                    <img src="../img/icons8-nuevo-post-50 (1).png" width="25">
+                    lautaro@gmail.com
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/543412777533" target="_blank" class="footer-link">
+                    <img src="../img/icons8-whatsapp-50.png" width="25">3412345678
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/maps/search/Av.+Génova+640,+Rosario" target="_blank"
+                    class="footer-link">
+                    <img src="../img/icons8-pin-de-ubicación-24 (1).png" width="25">
+                    Av. Génova 640, Rosario
+                </a>
+            </li>
+        </div>
+
+        <div class="footer-col redes">
+            <h3>Redes Sociales</h3>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../img/icons8-instagram-50.png" width="35">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="../img/icons8-facebook-nuevo-50.png" width="35">
+            </a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Taller Mecánico</h3>
+            <p>Servicio profesional de mecánica general.</p>
+            <p>Diagnóstico preciso y soluciones responsables.</p>
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Mecánica Lautaro - Hecho con café y código.
+        </div>
+    </footer>
+
+
+    <script src="./js/servicios.js"></script>
+</body>
+</html>
