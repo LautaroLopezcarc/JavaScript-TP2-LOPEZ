@@ -49,11 +49,25 @@ form.addEventListener("submit", function(e) {
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
     
-    alert("Registro exitoso");
-
-    form.reset();
-
-    window.location.href = "./login.html";
+   Swal.fire({
+        icon: 'success',
+        title: '¡Cuenta creada!',
+        text: 'Tu registro se completó con éxito.',
+        confirmButtonText: 'Ir al Login',
+        iconColor: '#ff8c00',
+        background: '#000000',
+        color: '#ffffff',
+        confirmButtonColor: '#ff8c00',
+        confirmButtonText: 'Aceptar',
+        customClass: {
+            popup: 'borde-naranja'
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            form.reset();
+            window.location.href = "./login.html";
+        }
+    });
 });
 
 

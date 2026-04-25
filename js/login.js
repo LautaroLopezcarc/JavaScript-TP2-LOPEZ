@@ -31,12 +31,27 @@ form.addEventListener("submit", function(e) {
         localStorage.setItem("usuarioActivo", JSON.stringify(usuarioValido));
 
         
-        mostrarMensaje("¡Inicio de sesión exitoso! Entrando...", "ok");
+        Swal.fire({
+            icon: 'success',
+            title: '¡Inicio de sesión exitoso!',
+            text: 'Bienvenido.',
+            showConfirmButton: false,
+            timer: 2000, 
+            timerProgressBar: true,
+            iconColor: '#ff8c00',
+            background: '#000000',
+            color: '#ffffff',
+            confirmButtonColor: '#ff8c00',
+            confirmButtonText: 'Aceptar',
+            customClass: {
+             popup: 'borde-naranja'
+            }
+        }).then(() => {
+            window.location.href = "servicios.html";
+        });
 
         
-        setTimeout(() => {
-            window.location.href = "servicios.html"; 
-        }, 2000);
+       
 
     } else {
         
